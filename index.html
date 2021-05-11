@@ -1,0 +1,377 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Introduction to HTML by Richard Sheehan-Corkery</title>
+
+<style>
+	header {
+  background-color: lightgray;
+  text-align: center;
+  font-size: 35px;
+  color: darkblue;
+ border-style: solid;
+ border-width: medium;
+border-color: black;
+height: 200px
+}
+
+aside {
+background-color: #D4CDCD;
+  float: right;
+  width: 30%;
+  padding: 20px;
+border:inset;
+}
+
+main {
+background-color: #f8f8ff;
+width: 60%;
+margin-right: auto;
+margin-left: auto;
+border: thin solid darkgray color; 
+margin: 20px;
+border: solid;
+padding-right: 2px;
+padding-bottom: 0px;
+padding-left: 2px;
+}
+
+	section {
+		background-color: gray;
+		border:dotted;
+	}
+#wrapper
+	{
+		width: 1500px;
+		background-color: #E1E1E1;
+		margin: auto;
+		border-width: 30px; 
+		border-radius: 25px;
+	}
+	
+	
+	a:link {
+	text-decoration: none; 
+	background-color: darkblue; 
+	border: thin solid;
+	border-color: lightblue; 
+	width: 150px;
+	padding-right: 3px; 	
+	padding-left: 3px; 
+	text-align: center; 
+	color: white;
+			}
+	
+	a:hover {
+		text-decoration: underline;
+		background-color: lightgray;
+	}
+	
+	a:active {
+  color: green;
+	}
+	
+	a:visited {
+  color: mistyrose;
+	}
+	
+	.stand-out-style {
+		font-family:1.	Gotham, Helvetica Neue, Helvetica, Arial, sans-serif; 
+		background-color: darkgray;
+		margin-left: 30px;
+		padding: 5px;
+		font-weight: lighter;
+		font-style: italic;
+	}
+	
+nav {
+    background-color: #D4CDCD;
+	position:sticky;
+	border:inset;
+	height: 80px;
+} 
+	
+.navigator ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	
+.navigator li a {
+		background-color: #D4CDCD;
+		padding: 8px;
+		text-direction: none;
+		display: block;
+	}
+
+.navigator li {
+	display: inline;
+	float: left;
+	}
+	
+.navigator a:visited {
+  color: darkgray;
+	}
+.navigator a:hover {
+		background-color: darkblue;
+	}
+	
+</style>
+</head>
+
+<body>
+		
+<header>
+  	<h1>Introduction to HTML by Richard Sheehan-Corkery</h1>
+</header>
+
+<nav class="navigator">
+	<ul>
+		<li><a href="index.html">Introduction to HTML</a></li>
+	  <li><a href="css_assignment.html">CSS</a></li>
+	</ul>
+</nav>
+	
+<section>	
+  
+<main>
+<h2>Doctype</h2>
+	<p>&lt;!DOCTYPE&gt; is the first thing that must appear in an html document. It is essential for the browser to know what version of HTML the page is written in. </p>
+	
+	<p> <code>&lt;!DOCTYPE html&gt;</code> tells the browser it's HTML 5 </p>
+
+<h2>Html</h2>
+	
+	<p> contains all html elements except for the Doctype tag</p>
+	
+<h2>Head</h2>
+	<p>&lt;head&gt; is where all the head elements of the webpage go, this includes elements like style, metadata and page title.</p><br>
+	<p><code>&lt;head&gt;&lt;/head&gt;</code></p>
+	
+<h2>Body</h2>
+	
+	<p> this is where all the visible webpage elements go, this is the main part of your website. Images, text, tables, your content goes in here.</p>
+	<p><code>&lt;body&gt; This is where your site content goes &lt;/body&gt;</code></p>
+	
+<h2>Title</h2>
+	<p>Gives your page a title, this shows up at the top of browser window/tab, bookmarks and more. This is an essential part of your site identity.</p>
+	<p><code>&lt;title&gt;RichardSheehanCorkerywebassignment1&lt;/title&gt;</code></p>
+	
+<h2>Span</h2>
+	<p>This allows you to colour a part of text.</p>
+	<code>&lt;p&gt;Watch this code use the colour &lt;span style=&quot;color:red&quot;&gt;red&lt;/span&gt; with ease.&lt;/p&gt;</code>
+<p>Watch this code use the colour <span style="color:red">red</span> with ease.</p>
+	
+<h2>P</h2>
+	<p>All text contained within the p tag is formatted as a paragraph..</p>
+	<code>&lt;p&gt;This code makes text into a paragraph &lt;/p&gt;</code>
+<p> This code makes text into a paragraph. </p>
+
+<h2>Div</h2>
+ 	<p>This tag makes a section sort of like a more malleable version of the body tag. This is very useful for styling html elements.</p>
+	<p><code>&lt;div style=&quot;background-color:darkgray&quot;&gt; 
+		&lt;p&gt;This is in a div&lt;/p&gt; &lt;/div&gt;</code></p>
+	<div style="background-color:darkgray">
+  	<p>This is in a div</p>
+	</div>
+	
+<h2>Heading Elements – H1 To H6</h2>
+	These style text to take on a format that works as a heading. They go from size 1 (<code>&lt;h1&gt;</code>) which is the largest to size 6 (<code>&lt;h6&gt;</code>) which is the smallest.
+	<p><code>
+	&lt;h1&gt; heading 1 &lt;/h1&gt; <br> 
+	&lt;h2&gt; heading 2 &lt;/h2&gt; <br>
+	&lt;h3&gt; heading 3 &lt;/h3&gt;<br>
+ 	&lt;h4&gt; heading 4 &lt;/h4&gt;<br>
+ 	&lt;h5&gt; heading 5 &lt;/h5&gt;<br>
+	&lt;h6&gt; heading 6 &lt;/h6&gt;</code></p>
+	
+	
+	<h1> heading 1 </h1>
+	<h2> heading 2 </h2>
+	<h3> heading 3 </h3>
+	<h4> heading 4 </h4>
+	<h5> heading 5 </h5>
+	<h6> heading 6 </h6>
+	
+<h2>Formatting Elements – Strong, Emphasis</h2>
+	<p>These format text as bold and italic on your webpage.</p>
+	
+	<p><code>&lt;strong&gt;this is bold&lt;/strong&gt; and &lt;em&gt;this is italic&lt;/em&gt;</code></p>
+	
+	<p><strong>this is bold</strong> and <em>this is italic</em></p>
+	
+
+<h2>Tables &amp; Caption</h2>
+	
+	<p>tables encompass a number of tags but these all contribute to creating tables in html.</p>
+	<ul>
+		<li><strong>&lt;table&gt;</strong> announces the start of a table and you can style the table with this tag.</li><br>
+		<li><strong>&lt;tr&gt;</strong>creates a table row</li>
+		<li><strong>&lt;td&gt;</strong>creates a table cell</li>
+		<li><strong>&lt;th&gt;</strong>defines a header cell</li>
+		<li><strong>&lt;caption&gt;</strong>lets you give the table a caption</li>
+	</ul>
+	<p> <code> &lt;table&gt; <br>
+&lt;caption&gt;This is a table caption&lt;/caption&gt;<br>
+ &lt;tr&gt; <br>
+&lt;th&gt;This is a header cell&lt;/th&gt; <br>
+&lt;th&gt;This is also a header cell&lt;/th&gt; &lt;/tr&gt; <br>
+&lt;tr&gt; &lt;td&gt;This is a normal cell&lt;/td&gt; &lt;td&gt;this is also a normal cell&lt;/td&gt; &lt;/tr&gt; <br>
+&lt;/table&gt;</code> </p>
+	
+	<p><table>
+  <caption>This is a table caption</caption>
+  <tr>
+    <th>This is a header cell</th>
+    <th>This is also a header cell</th>
+  </tr>
+  <tr>
+    <td>This is a normal cell</td>
+    <td>this is also a normal cell</td>
+  </tr>
+</table></p>
+	
+<h2>Lists</h2>
+	<p>there are two main list items in html, the ordered list and the unordered list, the ordered list is numbered, the unordered list is bulleted.</p>
+		
+	<p><code>&lt;ul&gt; <br>
+&lt;li&gt;this is&lt;/li&gt; <br>
+&lt;li&gt;an unordered&lt;/li&gt; <br>
+&lt;li&gt;list&lt;/li&gt; &lt;/ul&gt; <br>
+&lt;ol&gt; <br>
+&lt;li&gt;this is&lt;/li&gt; <br>
+&lt;li&gt;an&lt;/li&gt; <br>
+&lt;li&gt;ordered list&lt;/li&gt; <br>
+&lt;/ol&gt;</code></p>
+			
+	<p>
+	<ul>
+  <li>this is</li>
+  <li>an unordered</li>
+  <li>list</li>
+	</ul><br>
+	</p>
+
+	<p>
+	<ol>
+  <li>this is</li>
+  <li>an</li>
+  <li>ordered list</li>
+	</ol> </p>
+	
+<h2>Images &amp; Alt</h2>
+	<p>this tag allows you to add images to your site content and attach alt text to the image so that the image can be understood by search engines and speech to text readers.</p>
+	<p><code>&lt;p&gt;&lt;img src=&quot;images/this is an image.png&quot; alt=&quot;this is the alt text&quot;&gt;&lt;/p&gt;</code></p>
+	<p><img src="WebAssignment1/images/this is an image.png" alt="this is the alt text"></p>
+	
+<h2>Links</h2>
+	Links allow you to navigate to different pages both on your site and to external sites.
+	<p><code>&lt;a href=&quot;https://lcetb.ie/&quot;&gt;This is a hyperlink&lt;/a&gt;</code></p>
+	<p><a href="#">This is a hyperlink</a></p>
+	
+<h2>Quote &amp; Blockquote </h2>
+	
+These tags are for handling quotations, the &lt;q&gt; tag handles short quotes on the site while &lt;blockquote&gt; handles longer quotes and allows you to add a citation using the &lt;cite&lt; element.
+<p><code>&lt;q cite=&quot;https://www.imdb.com/title/tt0076759/&quot;&gt;may the force be with you&lt;/q&gt;</code></p>
+<p><q cite="https://www.imdb.com/title/tt0076759/">may the force be with you</q></p>
+
+<p><code>&lt;blockquote cite=&quot;https://www.goodreads.com/quotes/6436-there-s-an-old-saying-in-tennessee-i-know-it-s&quot;&gt; <br>
+&lt;p&gt;There's an old saying in Tennessee &mdash; I know it's in Texas, probably in Tennessee &mdash; that says, fool me once, shame on &mdash; shame on you. Fool me &mdash; you can't get fooled again.&lt;/p&gt; <br>
+&lt;footer&gt;&mdash;George W. Bush, &lt;cite&gt;that one time.&lt;/cite&gt;&lt;/footer&gt; &lt;/blockquote&gt;</code></p>
+<p><blockquote cite="https://www.goodreads.com/quotes/6436-there-s-an-old-saying-in-tennessee-i-know-it-s">
+    <p>There's an old saying in Tennessee — I know it's in Texas, probably in Tennessee — that says, fool me once, shame on — shame on you. Fool me — you can't get fooled again.</p>
+    <footer>—George W. Bush, <cite>that one time.</cite></footer>
+</blockquote></p>
+
+
+<h2>Abbreviations</h2>
+	<p>this tag allows you to define an abbreviation on your site.</p>
+
+	<p><code>&lt;p&gt;&lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt;&lt;/p&gt;</code></p>
+
+	<p><abbr title="Hyper Text Markup Language">HTML</abbr></p>
+	
+<h2>Meta</h2>
+	<p>Metadata compiles information about your site that a visitor might not necessairly see, this information is useful for browsers, search engines and more. The kind of information stored as metadata includes things like key words, the author of the site and when it was last updated. Metadata is always placed within the &lt;head&gt;.
+	</p>
+	<p>
+  <code>&lt;meta name=&quot;description&quot; content=&quot;introduction to HTML&quot;&gt; <br>
+&lt;meta name=&quot;keywords&quot; content=&quot;HTML,tags,educational&quot;&gt; <br>
+&lt;meta name=&quot;author&quot; content=&quot;Richard Sheehan-Corkery&quot;&gt;</code>
+</p>
+	
+<h2>Forms</h2>
+	<p>Html can be used to creat a wide variety of forms, the most common being the contact form which can be used to contact through email.</p>
+<p>main tags for forms are the &lt;form&gt; tag that is the container for the form elements, the &lt;input&gt; tag which designates where the user can input data and &lt;textarea&gt; which can have text in the input box </p>
+
+<p><code>
+	&lt;form&gt; <br>
+	&lt;input type=&quot;text&quot;&gt; <br>
+&lt;textarea rows=&quot;2&quot; cols=&quot;25&quot;&gt; this is the text area &lt;/textarea&gt;<br>
+	&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt; <br>
+	&lt;/form&gt; <br>
+	</code></p>
+
+<p><form>
+  <input type="text"><br><br>
+	<textarea rows="2" cols="25">
+this is the text area
+</textarea>
+  <input type="submit" value="Submit">
+</form></p>
+	
+<h2>Special Symbols and Character Entities: Copyright, Registered Trademark, Ampersand, Euro, Non-Breaking Space, Less Than, Greater Than</h2>
+  <p> some symbols won't show up in html if you just type them out. Some have use in code so they are reserved for that.</p><br>
+	<table>
+  <tr>
+    <th>Name</th>
+    <th>Symbol</th>
+    <th>Code</th>
+  </tr>
+  <tr>
+    <td>Copyright</td>
+    <td>&copy;</td>
+    <td><code>&amp;copy;</code></td>
+  </tr>
+  <tr>
+    <td>Trademark</td>
+    <td>&trade;</td>
+    <td><code>&amp;trade;</code></td>
+  </tr>
+  <tr>
+    <td>Ampersand</td>
+    <td>&amp;</td>
+    <td><code>&amp;amp;</code></td>
+  </tr>
+  <tr>
+    <td>Euro</td>
+    <td> &euro;</td>
+    <td><code>&amp;euro;</code></td>
+  </tr>
+  <tr>
+    <td>Non-Breaking Space</td>
+    <td>&nbsp;</td>
+    <td><code>&amp;nbsp;</code></td>
+  </tr>
+  <tr>
+    <td>Less Than</td>
+    <td>&lt;</td>
+    <td><code>&amp;lt;</code></td>
+  </tr>
+    <tr>
+    <td>Greater Than</td>
+    <td>&gt;</td>
+    <td><code>&amp;gt;</code></td>
+  </tr>
+</table>
+
+
+  </main>
+  
+</section>
+
+	
+</body>
+</html>

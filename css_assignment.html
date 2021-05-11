@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS-Cascading Style Sheets</title>
+<style>
+	header {
+  background-color: lightgray;
+  text-align: center;
+  font-size: 35px;
+  color: darkblue;
+ border-style: solid;
+ border-width: medium;
+border-color: black;
+height: 200px
+}
+
+aside {
+background-color: #D4CDCD;
+  float: right;
+  width: 30%;
+  padding: 20px;
+border:inset;
+}
+
+main {
+background-color: #f8f8ff;
+width: 60%;
+Float:left;
+margin-right: auto;
+margin-left: auto;
+border: thin solid darkgray color; 
+margin: 20px;
+border: solid;
+padding-right: 2px;
+padding-bottom: 0px;
+padding-left: 2px;
+}
+
+	section {
+		background-color: gray;
+		border:dotted;
+	}
+#wrapper
+	{
+		width: 1500px;
+		background-color: #E1E1E1;
+		margin: auto;
+		border-width: 30px; 
+		border-radius: 25px;
+	}
+footer {
+  background-image: url("images/background.jpg");
+  border:solid;
+	height: 100px;
+	clear:both;
+	color: aliceblue;
+}
+	
+	
+	a:link {
+	text-decoration: none; 
+	background-color: darkblue; 
+	border: thin solid;
+	border-color: lightblue; 
+	width: 150px;
+	padding-right: 3px; 	
+	padding-left: 3px; 
+	text-align: center; 
+	color: white;
+			}
+	
+	a:hover {
+		text-decoration: underline;
+		background-color: lightgray;
+	}
+	
+	a:active {
+  color: green;
+	}
+	
+	a:visited {
+  color: mistyrose;
+	}
+	
+	
+	h3 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-variant: ;
+		font-weight:500;
+		font-size: 16;
+		text-decoration: overline;
+		text-align: center;
+		line-height: 80%;
+	}
+	.stand-out-style {
+		font-family:1.	Gotham, Helvetica Neue, Helvetica, Arial, sans-serif; 
+		background-color: darkgray;
+		margin-left: 30px;
+		padding: 5px;
+		font-weight: lighter;
+		font-style: italic;
+	}
+	
+	ul {
+		background-color: darkblue;
+		color:white;
+		list-style-position: outside;
+  		 list-style-image: url('images/bullet.gif');
+}
+	
+nav {
+    background-color: #D4CDCD;
+	position:sticky;
+	border:inset;
+	height: 80px;
+} 
+	
+.navigator ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+	
+.navigator li a {
+		background-color: #D4CDCD;
+		padding: 8px;
+		text-direction: none;
+		display: block;
+	}
+
+.navigator li {
+	display: inline;
+	float: left;
+	}
+	
+.navigator a:visited {
+  color: darkgray;
+	}
+.navigator a:hover {
+		background-color: darkblue;
+	}
+	
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+	
+<header>
+  <h1>CSS-Cascading Style Sheets</h1>
+</header>
+
+<nav class="navigator">
+	<h4>The Nav</h4>
+	<ul>
+		<li><a href="index.html">Introduction to HTML</a></li>
+	  <li><a href="css_assignment.html">CSS</a></li>
+	<li><a href="#">Link 1</a></li>
+	<li><a href="#">Link 2</a></li>
+	<li><a href="#">Link 3</a></li>
+		<li></li>
+	</ul> 
+</nav> 
+	
+	<main>
+		<h4>The Main</h4>
+	<h3>this is my H3 tag style</h3>
+<section>
+
+  <p class="stand-out-style">Stand-out style applied in this paragraph. Stand-out style applied here. Stand-out style applied here.</p>
+</section>
+
+	
+  </main>
+	
+<aside>
+	<h4>The Aside</h4>
+<section>
+ 	<p>Top 4 numbers
+	<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+<li>62</li>
+	</ul> </p>
+</section>
+</aside>
+
+ 
+<footer>
+<h4>The Footer</h4>
+</footer>
+	
+</div>
+
+</body>
+</html>
